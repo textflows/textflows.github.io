@@ -82,3 +82,12 @@ table{width:100%;border-collapse:collapse}td,th{border:1px solid var(--acc);padd
  .hero{padding-top:30px}.box{margin-top:0}.banner{height:180px}.grid2>div{padding:30px}footer ul{justify-self:start}
  .hours>img,.about>img{border-right:0}
 }
+
+.tabbar{display:none}
+@media (max-width:900px){
+.tabbar{display:grid;gap:0;margin:0;padding:0;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;box-shadow:0 -2px 10px rgba(0,0,0,.35)}
+.tabbar a{margin:0;border:0;border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:60px;padding:6px 0 calc(6px + env(safe-area-inset-bottom));color:#fff;text-decoration:none;font:700 12px var(--sans)}
+.tabbar svg{width:26px;height:26px;fill:currentColor}
+.tabbar .t-tel{background:#4caf50;color:#fff}.tabbar .t-mail{background:#c2185b;color:#fff}.tabbar .t-wa{background:#25d366;color:#fff}.tabbar .t-ang{background:var(--acc);color:var(--dark)}
+body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+}
